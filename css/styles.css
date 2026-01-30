@@ -1,0 +1,18 @@
+/* Basic responsive portfolio styles */
+:root{ --accent:#0b6ef6; --bg:#f8f9fb; --muted:#6b7280; --maxw:1000px }
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#111; background:var(--bg);}
+.container{max-width:var(--maxw); margin:0 auto; padding:24px}
+.site-header{background:#fff; border-bottom:1px solid #e6e9ef}
+.site-header .container{display:flex; align-items:center; justify-content:space-between}
+.logo{font-weight:700; color:var(--accent); text-decoration:none}
+.nav a{margin-left:18px; color:#111; text-decoration:none}
+.hero{padding:64px 0; background:linear-gradient(180deg, #fff, #f6fbff)}
+.hero .lead{font-size:1.125rem; color:var(--muted)}
+.btn{display:inline-block; margin-top:16px; padding:10px 16px; background:var(--accent); color:#fff; text-decoration:none; border-radius:6px}
+.projects .grid, .grid{display:grid; grid-template-columns:repeat(2,1fr); gap:16px}
+.card{background:#fff; border-radius:8px; padding:12px; box-shadow:0 4px 12px rgba(16,24,40,0.06)}
+.card img{width:100%; height:140px; object-fit:cover; border-radius:6px}
+.more{margin-top:12px}
+.site-footer{margin-top:40px; padding:24px 0; color:var(--muted); text-align:center}
+@media (max-width:700px){ .nav{display:none} .projects .grid, .grid{grid-template-columns:1fr} .hero{padding:40px 0} }
