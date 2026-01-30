@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Omar Berriche — Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Omar Berriche</a>
+      <nav class="nav" id="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="projects.html">Projets</a>
+        <a href="veilles.html">Veilles</a>
+      </nav>
+      <button id="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Étudiant en SISR</h1>
+          <p class="lead">Option SISR — ITIC Paris / Ensitech — 2024/2026</p>
+          <p>Je m'intéresse aux réseaux, à la sécurité et à l'automatisation. Voici quelques projets et notes de veille.</p>
+          <a class="btn" href="projects.html">Voir mes projets</a>
+        </div>
+        <div class="hero-image">
+          <img src="https://static.wixstatic.com/media/9e6efa_cea11440c74c46e2b7a2c54268e0fb40~mv2.png/v1/fill/w_315,h_315,al_c,lg_1,q_85,enc_avif,quality_auto/t%C3%A9l%C3%A9charg%C3%A9_edited.png" alt="Portrait Omar Berriche">
+        </div>
+      </div>
+    </section>
+
+    <section class="intro container">
+      <h2>À propos</h2>
+      <p><strong>Étudiant</strong> en option SISR, je suis passionné par les infrastructures réseau et les scripts d'automatisation. J'ai suivi des formations à <em>ITIC Paris</em> et <em>Ensitech</em>.</p>
+      <img class="logo-ensitech" src="https://static.wixstatic.com/media/9e6efa_f7e4b48c48a44fbe81de632776f26fd0~mv2.png/v1/fill/w_772,h_286,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo-ENSITECH-Formation-professionnelle.png" alt="Logo Ensitech">
+    </section>
+
+    <section class="projects container">
+      <h2>Projets récents</h2>
+      <div class="grid">
+         <article class="card">
+           <img src="https://static.wixstatic.com/media/9e6efa_cea11440c74c46e2b7a2c54268e0fb40~mv2.png" alt="Projet exemple 1">
+           <h3>Installation réseau</h3>
+           <p>Configuration d'un réseau local avec VLANs, routage et firewall.</p>
+         </article>
+         <article class="card">
+           <img src="https://static.wixstatic.com/media/9e6efa_f7e4b48c48a44fbe81de632776f26fd0~mv2.png" alt="Projet exemple 2">
+           <h3>Automatisation</h3>
+           <p>Scripting pour déploiement d'outils et monitoring avec Python et Bash.</p>
+         </article>
+      </div>
+      <p class="more"><a href="projects.html">Voir tous les projets →</a></p>
+    </section>
+
+    <section class="contact container">
+      <h2>Contact</h2>
+      <p>Tu peux me contacter via <a href="mailto:ton.email@example.com">ton.email@example.com</a> ou via mon ancien site Wix.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Omar Berriche</p>
+      <p><a href="https://berricheomar4.wixsite.com/my-site-3/politique-de-confidentialit%C3%A9" target="_blank" rel="noopener">Politique de confidentialité</a> • <a href="https://berricheomar4.wixsite.com/my-site-3/mentions-l%C3%A9gales" target="_blank" rel="noopener">Mentions légales</a></p>
+      <p><a href="https://berricheomar4.wixsite.com/my-site-3" target="_blank" rel="noopener">Ancien site Wix</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple mobile nav toggle
+    const toggle = document.getElementById('nav-toggle');
+    const nav = document.getElementById('main-nav');
+    toggle.addEventListener('click', ()=>{
+      const open = nav.style.display === 'block';
+      nav.style.display = open ? '' : 'block';
+    });
+  </script>
 </body>
 </html>
